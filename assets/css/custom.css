@@ -8,7 +8,7 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B1220;
+  background: #F3EEE2;
 }
 ::-webkit-scrollbar-thumb {
   background: #0EA5E9;
@@ -41,25 +41,51 @@ html {
 
 /* Nav glass on scroll — toggled by JS */
 .nav-scrolled {
-  background: rgba(15,23,42,0.92) !important;
+  background: rgba(243,238,226,0.88) !important;
   backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  box-shadow: 0 1px 0 rgba(20,19,15,0.08);
 }
 
-/* Gradient hero bg — slow drifting glow */
-.hero-bg {
-  background-image:
-    radial-gradient(ellipse 80% 60% at center, rgba(14,165,233,0.08) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at center, rgba(249,115,22,0.05) 0%, transparent 60%);
-  background-repeat: no-repeat;
-  background-size: 140% 140%, 100% 100%;
-  background-position: 60% 40%, 90% 80%;
-  animation: hero-glow-drift 28s ease-in-out infinite;
+/* WebGL shader hero background — canvas sits behind hero content */
+.hero-shader-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
-@keyframes hero-glow-drift {
-  0%   { background-position: 60% 40%, 90% 80%; }
-  50%  { background-position: 45% 55%, 75% 65%; }
-  100% { background-position: 60% 40%, 90% 80%; }
+
+/* Floating minimal toolbar — fixed corner pill, homage to design-engineer portfolios */
+.mini-toolbar {
+  position: fixed;
+  left: 22px;
+  bottom: 22px;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(20,19,15,0.1);
+  border-radius: 16px;
+  padding: 6px;
+  box-shadow: 0 8px 24px rgba(20,19,15,0.08);
+}
+.mini-toolbar a, .mini-toolbar button {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #141310;
+  transition: background 0.15s ease;
+}
+.mini-toolbar a:hover, .mini-toolbar button:hover {
+  background: rgba(20,19,15,0.06);
+}
+@media (max-width: 767px) {
+  .mini-toolbar { display: none; }
 }
 
 /* Scroll reveal */
@@ -74,7 +100,6 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-bg { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 

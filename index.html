@@ -52,15 +52,17 @@
             'brand-blue':       '#0EA5E9',
             'brand-blue-dark':  '#0284C7',
             'brand-orange':     '#F97316',
-            'brand-dark':       '#0F172A',
-            'brand-base-alt':   '#0B1220',
-            'brand-panel':      '#172033',
-            'brand-muted':      'rgba(255,255,255,0.62)',
-            'brand-muted-2':    'rgba(255,255,255,0.42)',
+            'brand-dark':       '#F3EEE2',
+            'brand-base-alt':   '#FFFFFF',
+            'brand-panel':      '#FFFFFF',
+            'brand-muted':      'rgba(20,19,15,0.64)',
+            'brand-muted-2':    'rgba(20,19,15,0.44)',
+            'brand-ink':        '#141310',
           },
           fontFamily: {
             heading: ['Inter', 'sans-serif'],
             body:    ['Inter', 'sans-serif'],
+            mono:    ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
           }
         }
       }
@@ -73,20 +75,20 @@
   <!-- Three.js (hero 3D element only — desktop, motion allowed, WebGL available) -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 </head>
-<body class='font-body bg-brand-dark text-white antialiased'>
+<body class='font-body bg-brand-dark text-brand-ink antialiased'>
 
 <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 lg:px-16">
   <div class="max-w-6xl mx-auto flex items-center justify-between">
     <a href="#" class="flex-shrink-0">
-      <img src="assets/logo-white.svg" alt="OLA Digital" class="h-9 w-auto"/>
+      <img src="assets/logo.svg" alt="OLA Digital" class="h-9 w-auto"/>
     </a>
 
     <div class="hidden md:flex items-center gap-8">
-      <a href="#servicios" class="text-white/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Servicios</a>
-      <a href="#trabajos" class="text-white/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Trabajos</a>
-      <a href="#nosotros" class="text-white/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Nosotros</a>
-      <a href="#contacto" class="text-white/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Contacto</a>
-      <a href="#contacto" class="bg-brand-blue hover:bg-brand-blue-dark text-white font-body font-semibold text-sm px-5 py-2.5 rounded-full transition-all active:scale-95">
+      <a href="#servicios" class="text-brand-ink/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Servicios</a>
+      <a href="#trabajos" class="text-brand-ink/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Trabajos</a>
+      <a href="#nosotros" class="text-brand-ink/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Nosotros</a>
+      <a href="#contacto" class="text-brand-ink/70 hover:text-brand-blue font-body font-medium text-sm transition-colors">Contacto</a>
+      <a href="#contacto" class="bg-brand-blue hover:bg-brand-blue-dark text-brand-ink font-body font-semibold text-sm px-5 py-2.5 rounded-full transition-all active:scale-95">
         Hablemos
       </a>
     </div>
@@ -99,8 +101,8 @@
         <span class="block w-6 h-0.5 bg-white"></span>
       </label>
       <div class="peer-checked:flex hidden absolute top-full left-0 right-0 bg-brand-dark shadow-lg flex-col items-center gap-6 py-8">
-        <a href="#servicios" class="text-white font-body font-medium text-base">Servicios</a><a href="#trabajos" class="text-white font-body font-medium text-base">Trabajos</a><a href="#nosotros" class="text-white font-body font-medium text-base">Nosotros</a><a href="#contacto" class="text-white font-body font-medium text-base">Contacto</a>
-        <a href="#contacto" class="bg-brand-blue text-white font-semibold text-sm px-6 py-3 rounded-full transition-transform active:scale-95">Hablemos</a>
+        <a href="#servicios" class="text-brand-ink font-body font-medium text-base">Servicios</a><a href="#trabajos" class="text-brand-ink font-body font-medium text-base">Trabajos</a><a href="#nosotros" class="text-brand-ink font-body font-medium text-base">Nosotros</a><a href="#contacto" class="text-brand-ink font-body font-medium text-base">Contacto</a>
+        <a href="#contacto" class="bg-brand-blue text-brand-ink font-semibold text-sm px-6 py-3 rounded-full transition-transform active:scale-95">Hablemos</a>
       </div>
     </div>
   </div>
@@ -113,169 +115,135 @@
   });
 </script>
 
-<section class="hero-bg bg-brand-dark min-h-screen flex items-center pt-20 pb-16 px-6 lg:px-16">
-  <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
-    <!-- Text -->
-    <div class="order-2 md:order-1">
-      <div class="inline-flex items-center gap-2 bg-brand-blue/10 text-brand-blue font-body font-semibold text-sm px-4 py-1.5 rounded-full mb-6">
-        <span class="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></span>
-        Ads + Diseño Web en Olavarría
-      </div>
-      <h1 class="font-heading font-extrabold text-4xl lg:text-5xl xl:text-6xl text-white leading-tight mb-6">
-        Tu negocio no tiene señal.<br/>
-        <span class="text-brand-blue">Nosotros se la damos.</span>
-      </h1>
-      <p class="font-body text-brand-muted text-lg leading-relaxed mb-8 max-w-lg">
-        Campañas de Google y Meta Ads que traen clientes, y sitios web que los convierten. Sin jerga de agencia, sin reportes eternos — resultados que se ven en tu WhatsApp.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="https://wa.me/5491162310105?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios." target="_blank" rel="noopener"
-           class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-body font-semibold px-7 py-3.5 rounded-full transition-all active:scale-95 text-base">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.524 5.854L0 24l6.335-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.493-5.18-1.357l-.37-.219-3.835.909.971-3.75-.241-.385A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Escribinos por WhatsApp
-        </a>
-        <a href="#servicios" class="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-brand-blue hover:bg-brand-blue/10 text-white font-body font-semibold px-7 py-3.5 rounded-full transition-all active:scale-95 text-base">
-          Ver servicios
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-      </div>
-      <div class="flex items-center gap-8 mt-10 pt-8 border-t border-white/10">
-        <div>
-          <div class="font-heading font-bold text-2xl text-white">+50</div>
-          <div class="font-body text-brand-muted text-sm">Clientes activos</div>
-        </div>
-        <div class="w-px h-10 bg-white/10"></div>
-        <div>
-          <div class="font-heading font-bold text-2xl text-white">3 años</div>
-          <div class="font-body text-brand-muted text-sm">En Olavarría</div>
-        </div>
-        <div class="w-px h-10 bg-white/10"></div>
-        <div>
-          <div class="font-heading font-bold text-2xl text-white">100%</div>
-          <div class="font-body text-brand-muted text-sm">Local</div>
-        </div>
-      </div>
+<section class="relative bg-brand-dark min-h-screen flex items-center pt-20 pb-16 px-6 lg:px-16 overflow-hidden">
+  <canvas id="hero-shader" class="hero-shader-canvas"></canvas>
+  <div class="max-w-3xl mx-auto w-full text-center relative" style="z-index:1">
+    <div class="inline-flex items-center gap-2 bg-white/70 text-brand-ink font-mono font-medium text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 border border-brand-ink/10">
+      <span class="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></span>
+      Ads + Diseño Web en Olavarría
     </div>
-    <!-- Illustration -->
-    <div class="order-1 md:order-2 flex justify-center">
-      <div id="hero-3d" style="display:none; width:100%; max-width:32rem; aspect-ratio:1/1;"></div>
-      <svg id="hero-illustration-fallback" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-lg">
-  <!-- Background circles -->
-  <circle cx="240" cy="200" r="160" fill="#0EA5E9" opacity="0.06"/>
-  <circle cx="240" cy="200" r="110" fill="#0EA5E9" opacity="0.06"/>
-  <!-- Phone mockup -->
-  <rect x="170" y="80" width="140" height="240" rx="20" fill="white" stroke="#0EA5E9" stroke-width="3"/>
-  <rect x="185" y="100" width="110" height="180" rx="4" fill="#F0F9FF"/>
-  <!-- Screen content bars -->
-  <rect x="195" y="115" width="90" height="10" rx="5" fill="#0EA5E9" opacity="0.3"/>
-  <rect x="195" y="133" width="65" height="8" rx="4" fill="#475569" opacity="0.25"/>
-  <rect x="195" y="150" width="90" height="45" rx="8" fill="#0EA5E9" opacity="0.12"/>
-  <rect x="195" y="204" width="42" height="42" rx="8" fill="#F97316" opacity="0.15"/>
-  <rect x="243" y="204" width="42" height="42" rx="8" fill="#0EA5E9" opacity="0.15"/>
-  <rect x="195" y="252" width="90" height="8" rx="4" fill="#475569" opacity="0.2"/>
-  <!-- Home indicator -->
-  <rect x="215" y="300" width="50" height="4" rx="2" fill="#475569" opacity="0.3"/>
-  <!-- Floating badges -->
-  <g transform="translate(60, 120)">
-    <rect width="110" height="44" rx="12" fill="white" filter="url(#shadow)"/>
-    <circle cx="22" cy="22" r="14" fill="#0EA5E9" opacity="0.15"/>
-    <text x="22" y="27" text-anchor="middle" font-size="14">📈</text>
-    <rect x="44" y="14" width="52" height="7" rx="3.5" fill="#0F172A" opacity="0.15"/>
-    <rect x="44" y="26" width="36" height="6" rx="3" fill="#0EA5E9" opacity="0.25"/>
-  </g>
-  <g transform="translate(310, 230)">
-    <rect width="110" height="44" rx="12" fill="white" filter="url(#shadow)"/>
-    <circle cx="22" cy="22" r="14" fill="#F97316" opacity="0.15"/>
-    <text x="22" y="27" text-anchor="middle" font-size="14">⭐</text>
-    <rect x="44" y="14" width="52" height="7" rx="3.5" fill="#0F172A" opacity="0.15"/>
-    <rect x="44" y="26" width="40" height="6" rx="3" fill="#F97316" opacity="0.25"/>
-  </g>
-  <!-- Connecting lines -->
-  <line x1="170" y1="160" x2="120" y2="142" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
-  <line x1="310" y1="250" x2="365" y2="252" stroke="#F97316" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
-  <!-- Dots -->
-  <circle cx="380" cy="120" r="6" fill="#0EA5E9" opacity="0.3"/>
-  <circle cx="90" cy="300" r="8" fill="#F97316" opacity="0.2"/>
-  <circle cx="420" cy="300" r="5" fill="#0EA5E9" opacity="0.25"/>
-  <defs>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0EA5E9" flood-opacity="0.12"/>
-    </filter>
-  </defs>
-</svg>
+    <h1 class="font-heading font-extrabold text-4xl lg:text-5xl xl:text-6xl text-brand-ink leading-tight mb-6">
+      Tu negocio no tiene señal.<br/>
+      <span class="text-brand-blue">Nosotros se la damos.</span>
+    </h1>
+    <p class="font-body text-brand-muted text-lg leading-relaxed mb-8 max-w-lg mx-auto">
+      Campañas de Google y Meta Ads que traen clientes, y sitios web que los convierten. Sin jerga de agencia, sin reportes eternos — resultados que se ven en tu WhatsApp.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://wa.me/5491162310105?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios." target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-body font-semibold px-7 py-3.5 rounded-full transition-all active:scale-95 text-base">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.524 5.854L0 24l6.335-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.493-5.18-1.357l-.37-.219-3.835.909.971-3.75-.241-.385A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Escribinos por WhatsApp
+      </a>
+      <a href="#servicios" class="inline-flex items-center justify-center gap-2 border border-brand-ink/20 hover:border-brand-blue hover:bg-brand-blue/10 text-brand-ink font-body font-semibold px-7 py-3.5 rounded-full transition-all active:scale-95 text-base">
+        Ver servicios
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+    <div class="flex items-center justify-center gap-8 mt-10 pt-8 border-t border-brand-ink/10">
+      <div>
+        <div class="font-heading font-bold text-2xl text-brand-ink">+50</div>
+        <div class="font-body text-brand-muted text-sm">Clientes activos</div>
+      </div>
+      <div class="w-px h-10 bg-brand-ink/8"></div>
+      <div>
+        <div class="font-heading font-bold text-2xl text-brand-ink">3 años</div>
+        <div class="font-body text-brand-muted text-sm">En Olavarría</div>
+      </div>
+      <div class="w-px h-10 bg-brand-ink/8"></div>
+      <div>
+        <div class="font-heading font-bold text-2xl text-brand-ink">100%</div>
+        <div class="font-body text-brand-muted text-sm">Local</div>
+      </div>
     </div>
   </div>
 </section>
 
 <script>
+  // WebGL fragment-shader background — flowing gradient field, tied to
+  // scroll position for a "scroll-sync" feel (reference: design-engineer
+  // portfolio, WebGL/shaders throughout).
   (function () {
-    var supports3D = window.innerWidth >= 768
-      && typeof THREE !== 'undefined'
+    var canvas = document.getElementById('hero-shader');
+    var supportsWebGL = typeof THREE !== 'undefined'
       && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
       && !!window.WebGLRenderingContext;
-    if (!supports3D) return;
-
-    var container = document.getElementById('hero-3d');
-    var fallback = document.getElementById('hero-illustration-fallback');
-
-    container.style.display = 'block';
-    fallback.style.display = 'none';
+    if (!supportsWebGL) { canvas.style.display = 'none'; return; }
 
     try {
-      var width = container.clientWidth, height = container.clientHeight;
+      var section = canvas.closest('section');
+      var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
       var scene = new THREE.Scene();
-      var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-      camera.position.z = 4.5;
+      var camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
 
-      var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-      renderer.setSize(width, height);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      container.appendChild(renderer.domElement);
+      var uniforms = {
+        uTime:   { value: 0 },
+        uScroll: { value: 0 },
+        uRes:    { value: new THREE.Vector2(1, 1) },
+        uColorA: { value: new THREE.Color(0x0EA5E9) },
+        uColorB: { value: new THREE.Color(0xF97316) },
+        uColorBg:{ value: new THREE.Color(0xF3EEE2) }
+      };
 
-      var outerGeo = new THREE.IcosahedronGeometry(1.6, 1);
-      var outerMat = new THREE.MeshStandardMaterial({ color: 0x0EA5E9, wireframe: true, transparent: true, opacity: 0.85 });
-      var outerMesh = new THREE.Mesh(outerGeo, outerMat);
-      scene.add(outerMesh);
-
-      var innerGeo = new THREE.IcosahedronGeometry(0.9, 1);
-      var innerMat = new THREE.MeshStandardMaterial({ color: 0xF97316, wireframe: true, transparent: true, opacity: 0.5 });
-      var innerMesh = new THREE.Mesh(innerGeo, innerMat);
-      scene.add(innerMesh);
-
-      scene.add(new THREE.AmbientLight(0xffffff, 0.6));
-      var point = new THREE.PointLight(0x0EA5E9, 1.2);
-      point.position.set(3, 3, 3);
-      scene.add(point);
-
-      var targetX = 0, targetY = 0;
-      container.addEventListener('mousemove', function (e) {
-        var rect = container.getBoundingClientRect();
-        targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 0.6;
-        targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 0.6;
+      var material = new THREE.ShaderMaterial({
+        uniforms: uniforms,
+        vertexShader: [
+          'void main() { gl_Position = vec4(position, 1.0); }'
+        ].join('\n'),
+        fragmentShader: [
+          'precision highp float;',
+          'uniform float uTime;',
+          'uniform float uScroll;',
+          'uniform vec2 uRes;',
+          'uniform vec3 uColorA;',
+          'uniform vec3 uColorB;',
+          'uniform vec3 uColorBg;',
+          '',
+          'float wave(vec2 p, float t) {',
+          '  return sin(p.x * 2.2 + t) * 0.5 + sin(p.y * 1.6 - t * 0.7) * 0.5;',
+          '}',
+          '',
+          'void main() {',
+          '  vec2 uv = (gl_FragCoord.xy - 0.5 * uRes) / uRes.y;',
+          '  float t = uTime * 0.15 + uScroll * 0.6;',
+          '  float n = wave(uv * 1.4, t) + wave(uv * 2.6 + 3.0, t * 1.3) * 0.5;',
+          '  float mixAmt = smoothstep(-0.6, 0.6, n);',
+          '  vec3 col = mix(uColorA, uColorB, mixAmt);',
+          '  float glow = smoothstep(1.0, 0.0, length(uv));',
+          '  col = mix(uColorBg, col, glow * 0.16);',
+          '  gl_FragColor = vec4(col, 1.0);',
+          '}'
+        ].join('\n')
       });
 
-      function animate() {
-        requestAnimationFrame(animate);
-        outerMesh.rotation.y += 0.0025;
-        outerMesh.rotation.x += 0.0012;
-        innerMesh.rotation.y -= 0.0018;
-        innerMesh.rotation.x -= 0.0009;
-        camera.position.x += (targetX - camera.position.x) * 0.04;
-        camera.position.y += (-targetY - camera.position.y) * 0.04;
-        camera.lookAt(scene.position);
-        renderer.render(scene, camera);
+      var quad = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material);
+      scene.add(quad);
+
+      function resize() {
+        var w = section.clientWidth, h = section.clientHeight;
+        renderer.setSize(w, h, false);
+        uniforms.uRes.value.set(w * renderer.getPixelRatio(), h * renderer.getPixelRatio());
       }
-      animate();
+      resize();
+      window.addEventListener('resize', resize);
 
-      window.addEventListener('resize', function () {
-        var w = container.clientWidth, h = container.clientHeight;
-        camera.aspect = w / h;
-        camera.updateProjectionMatrix();
-        renderer.setSize(w, h);
-      });
+      window.addEventListener('scroll', function () {
+        var progress = Math.min(1, window.scrollY / (window.innerHeight || 1));
+        uniforms.uScroll.value = progress;
+      }, { passive: true });
+
+      var start = null;
+      function frame(t) {
+        if (start === null) start = t;
+        uniforms.uTime.value = (t - start) / 1000;
+        renderer.render(scene, camera);
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
     } catch (e) {
-      container.style.display = 'none';
-      fallback.style.display = '';
+      canvas.style.display = 'none';
     }
   })();
 </script>
@@ -283,32 +251,32 @@
 <section id="servicios" class="py-20 px-6 lg:px-16 bg-brand-base-alt">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14 reveal">
-      <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Lo que hacemos</span>
-      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-4">Dos cosas.<br/>Bien hechas.</h2>
+      <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Lo que hacemos</span>
+      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-4">Dos cosas.<br/>Bien hechas.</h2>
       <p class="font-body text-brand-muted text-lg max-w-2xl mx-auto">Nada de paquetes de diez servicios que no necesitás. Ads que traen gente y un sitio que los convierte — eso alcanza para crecer online.</p>
     </div>
     <div class="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-      <div class="service-card reveal bg-brand-panel rounded-2xl p-7 border border-white/10">
+      <div class="service-card reveal bg-brand-panel rounded-2xl p-7 border border-brand-ink/10">
         <div class="w-12 h-12 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-5">
           <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
           </svg>
         </div>
-        <h3 class="font-heading font-bold text-lg text-white mb-2">Ads Pagados</h3>
+        <h3 class="font-heading font-bold text-lg text-brand-ink mb-2">Ads Pagados</h3>
         <p class="font-body text-brand-muted text-sm leading-relaxed">Campañas de Google y Meta Ads armadas para negocios locales. Pagás por clic, no por promesas — vemos el gasto juntos cada semana.</p>
       </div>
-      <div class="service-card reveal bg-brand-panel rounded-2xl p-7 border border-white/10">
+      <div class="service-card reveal bg-brand-panel rounded-2xl p-7 border border-brand-ink/10">
         <div class="w-12 h-12 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-5">
           <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
         </div>
-        <h3 class="font-heading font-bold text-lg text-white mb-2">Diseño Web</h3>
+        <h3 class="font-heading font-bold text-lg text-brand-ink mb-2">Diseño Web</h3>
         <p class="font-body text-brand-muted text-sm leading-relaxed">Sitios rápidos y mobile-first, hechos para vender. Tu sitio es el primer vendedor que ve un cliente — que no lo espante.</p>
       </div>
     </div>
     <div class="mt-12 text-center">
-      <a href="#contacto" class="inline-flex items-center gap-2 bg-brand-orange hover:bg-orange-600 text-white font-body font-semibold px-8 py-3.5 rounded-full transition-all active:scale-95">
+      <a href="#contacto" class="inline-flex items-center gap-2 bg-brand-orange hover:bg-orange-600 text-brand-ink font-body font-semibold px-8 py-3.5 rounded-full transition-all active:scale-95">
         Consultá gratis qué necesitás
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
@@ -319,8 +287,8 @@
 <section id="local" class="py-20 px-6 lg:px-16 bg-brand-dark">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     <div>
-      <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Por qué una agencia local</span>
-      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-6">Conocemos Olavarría.<br/>Eso importa.</h2>
+      <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Por qué una agencia local</span>
+      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-6">Conocemos Olavarría.<br/>Eso importa.</h2>
       <div class="space-y-4 font-body text-brand-muted text-base leading-relaxed">
         <p>No somos una agencia de Buenos Aires que te manda un reporte por email. Somos de acá. Sabemos que el viernes hay partido en el Fortín, que la industria cementera mueve la economía local, y que el comercio de calle Rivadavia tiene dinámicas propias.</p>
         <p>Eso nos permite hacer campañas que realmente resuenan con la gente de Olavarría, no mensajes genéricos que funcionan para cualquier ciudad del país.</p>
@@ -352,34 +320,34 @@
 <section class="py-20 px-6 lg:px-16 bg-brand-base-alt">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14 reveal">
-      <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Cómo trabajamos</span>
-      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-4">Simple, transparente, efectivo</h2>
+      <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Cómo trabajamos</span>
+      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-4">Simple, transparente, efectivo</h2>
       <p class="font-body text-brand-muted text-lg max-w-xl mx-auto">Sin contratos eternos ni lenguaje técnico. Un proceso claro de cuatro pasos para que veas resultados desde el primer mes.</p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
 
       <div class="relative flex flex-col items-center text-center reveal"
-        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-white font-heading font-bold text-base mb-4 relative z-10">01</div>
+        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-brand-ink font-heading font-bold text-base mb-4 relative z-10">01</div>
         <div class="step-line hidden lg:block"></div>
-        <h3 class="font-heading font-bold text-base text-white mb-2">Diagnóstico gratuito</h3>
+        <h3 class="font-heading font-bold text-base text-brand-ink mb-2">Diagnóstico gratuito</h3>
         <p class="font-body text-brand-muted text-sm leading-relaxed">Analizamos tu presencia digital actual y la de tu competencia en Olavarría.</p>
       </div>
       <div class="relative flex flex-col items-center text-center reveal"
-        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-white font-heading font-bold text-base mb-4 relative z-10">02</div>
+        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-brand-ink font-heading font-bold text-base mb-4 relative z-10">02</div>
         <div class="step-line hidden lg:block"></div>
-        <h3 class="font-heading font-bold text-base text-white mb-2">Estrategia a medida</h3>
+        <h3 class="font-heading font-bold text-base text-brand-ink mb-2">Estrategia a medida</h3>
         <p class="font-body text-brand-muted text-sm leading-relaxed">Diseñamos un plan específico para tu negocio, tu presupuesto y tus objetivos.</p>
       </div>
       <div class="relative flex flex-col items-center text-center reveal"
-        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-white font-heading font-bold text-base mb-4 relative z-10">03</div>
+        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-brand-ink font-heading font-bold text-base mb-4 relative z-10">03</div>
         <div class="step-line hidden lg:block"></div>
-        <h3 class="font-heading font-bold text-base text-white mb-2">Ejecución y optimización</h3>
+        <h3 class="font-heading font-bold text-base text-brand-ink mb-2">Ejecución y optimización</h3>
         <p class="font-body text-brand-muted text-sm leading-relaxed">Implementamos, medimos y ajustamos semana a semana para maximizar resultados.</p>
       </div>
       <div class="relative flex flex-col items-center text-center reveal"
-        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-white font-heading font-bold text-base mb-4 relative z-10">04</div>
+        <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-brand-ink font-heading font-bold text-base mb-4 relative z-10">04</div>
 
-        <h3 class="font-heading font-bold text-base text-white mb-2">Reportes claros</h3>
+        <h3 class="font-heading font-bold text-base text-brand-ink mb-2">Reportes claros</h3>
         <p class="font-body text-brand-muted text-sm leading-relaxed">Cada mes recibís un informe simple que muestra exactamente qué logramos juntos.</p>
       </div>
     </div>
@@ -390,17 +358,17 @@
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
       <div>
-        <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Trabajos realizados</span>
-        <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-3">Lo que hicimos<br/>por nuestros clientes</h2>
-        <p class="font-body text-slate-400 text-base max-w-xl">Resultados reales para negocios de Olavarría y Argentina. Deslizá para ver cada caso.</p>
+        <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Trabajos realizados</span>
+        <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-3">Lo que hicimos<br/>por nuestros clientes</h2>
+        <p class="font-body text-slate-600 text-base max-w-xl">Resultados reales para negocios de Olavarría y Argentina. Deslizá para ver cada caso.</p>
       </div>
       <div class="flex items-center gap-2 flex-shrink-0">
         <button id="portfolio-prev" onclick="portfolioScroll(-1)"
-                class="w-10 h-10 rounded-full border border-white/20 hover:border-brand-blue hover:bg-brand-blue/10 flex items-center justify-center transition-all text-white">
+                class="w-10 h-10 rounded-full border border-brand-ink/20 hover:border-brand-blue hover:bg-brand-blue/10 flex items-center justify-center transition-all text-brand-ink">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
         </button>
         <button id="portfolio-next" onclick="portfolioScroll(1)"
-                class="w-10 h-10 rounded-full border border-white/20 hover:border-brand-blue hover:bg-brand-blue/10 flex items-center justify-center transition-all text-white">
+                class="w-10 h-10 rounded-full border border-brand-ink/20 hover:border-brand-blue hover:bg-brand-blue/10 flex items-center justify-center transition-all text-brand-ink">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -415,7 +383,7 @@
             <div class="flex items-start justify-between mb-3">
               <div>
                 <div class="font-body text-xs font-semibold uppercase tracking-widest mb-0.5" style="color:#d97706">Cervecería Artesanal</div>
-                <h3 class="font-heading font-extrabold text-xl text-white">Sur del Sur</h3>
+                <h3 class="font-heading font-extrabold text-xl text-brand-ink">Sur del Sur</h3>
               </div>
               <a href="https://www.instagram.com/sur.del.sur/" target="_blank" rel="noopener"
                  class="flex items-center gap-1 text-xs font-body opacity-50 hover:opacity-90 transition-opacity mt-1" style="color:rgba(255,255,255,0.8)">
@@ -446,7 +414,7 @@
             <div class="flex items-start justify-between mb-3">
               <div>
                 <div class="font-body text-xs font-semibold uppercase tracking-widest mb-0.5" style="color:#ea580c">Restaurante</div>
-                <h3 class="font-heading font-extrabold text-xl text-white">Pietra</h3>
+                <h3 class="font-heading font-extrabold text-xl text-brand-ink">Pietra</h3>
               </div>
               <a href="https://www.instagram.com/pietraolavarria/" target="_blank" rel="noopener"
                  class="flex items-center gap-1 text-xs font-body opacity-50 hover:opacity-90 transition-opacity mt-1" style="color:rgba(255,255,255,0.8)">
@@ -477,7 +445,7 @@
             <div class="flex items-start justify-between mb-3">
               <div>
                 <div class="font-body text-xs font-semibold uppercase tracking-widest mb-0.5" style="color:#38bdf8">E-commerce</div>
-                <h3 class="font-heading font-extrabold text-xl text-white">Maroni Maps</h3>
+                <h3 class="font-heading font-extrabold text-xl text-brand-ink">Maroni Maps</h3>
               </div>
               <a href="https://maronimaps.com/" target="_blank" rel="noopener"
                  class="flex items-center gap-1 text-xs font-body opacity-50 hover:opacity-90 transition-opacity mt-1" style="color:rgba(255,255,255,0.8)">
@@ -491,7 +459,7 @@
           </div>
           <!-- Visual mockup -->
           <div class="mx-4">
-            <div class="rounded-2xl overflow-hidden border border-white/10" style="background:#0a0a0a"><div class="flex items-center gap-1.5 px-3 py-2 border-b border-white/10" style="background:#1a1a1a"><span class="w-2.5 h-2.5 rounded-full" style="background:#ff5f57"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#febc2e"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#28c840"></span><div class="flex-1 mx-2 px-3 py-1 rounded-full text-center font-body" style="background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.4);font-size:11px">maronimaps.com</div></div><div class="relative overflow-hidden" style="height:140px"><img src="https://acdn-us.mitiendanube.com/stores/007/046/685/products/hero-image-f25279ee0744af603517691086757512-480-0.webp" alt="Maroni Maps" class="w-full h-full object-cover" loading="lazy"     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="absolute inset-0 items-center justify-center text-5xl hidden" style="background:#0c1628">🗺️</div><div class="absolute bottom-0 left-0 right-0 px-3 py-2" style="background:linear-gradient(to top,#0c1628f0,transparent)"><img src="http://acdn-us.mitiendanube.com/stores/007/046/685/themes/common/logo-1991807338-1769091459-467601d19e774efa52c36ec4f5bed1821769091459.png?0" alt="Maroni Maps logo" class="h-5 object-contain" loading="lazy" onerror="this.style.display='none'"/></div></div><div class="px-3 py-2.5 flex items-center gap-3 border-t border-white/8" style="background:#111"><div class="h-2 rounded-full w-14" style="background:#38bdf850"></div><div class="h-2 rounded-full flex-1 bg-white/10"></div><div class="h-6 w-16 rounded-full text-center font-body font-semibold flex items-center justify-center" style="background:#38bdf8;color:#0f172a;font-size:11px">Comprar</div></div></div>
+            <div class="rounded-2xl overflow-hidden border border-brand-ink/10" style="background:#0a0a0a"><div class="flex items-center gap-1.5 px-3 py-2 border-b border-brand-ink/10" style="background:#1a1a1a"><span class="w-2.5 h-2.5 rounded-full" style="background:#ff5f57"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#febc2e"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#28c840"></span><div class="flex-1 mx-2 px-3 py-1 rounded-full text-center font-body" style="background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.4);font-size:11px">maronimaps.com</div></div><div class="relative overflow-hidden" style="height:140px"><img src="https://acdn-us.mitiendanube.com/stores/007/046/685/products/hero-image-f25279ee0744af603517691086757512-480-0.webp" alt="Maroni Maps" class="w-full h-full object-cover" loading="lazy"     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="absolute inset-0 items-center justify-center text-5xl hidden" style="background:#0c1628">🗺️</div><div class="absolute bottom-0 left-0 right-0 px-3 py-2" style="background:linear-gradient(to top,#0c1628f0,transparent)"><img src="http://acdn-us.mitiendanube.com/stores/007/046/685/themes/common/logo-1991807338-1769091459-467601d19e774efa52c36ec4f5bed1821769091459.png?0" alt="Maroni Maps logo" class="h-5 object-contain" loading="lazy" onerror="this.style.display='none'"/></div></div><div class="px-3 py-2.5 flex items-center gap-3 border-t border-brand-ink/8" style="background:#111"><div class="h-2 rounded-full w-14" style="background:#38bdf850"></div><div class="h-2 rounded-full flex-1 bg-brand-ink/8"></div><div class="h-6 w-16 rounded-full text-center font-body font-semibold flex items-center justify-center" style="background:#38bdf8;color:#0f172a;font-size:11px">Comprar</div></div></div>
           </div>
           <!-- Result + description -->
           <div class="p-5 pt-4 flex flex-col gap-3">
@@ -511,7 +479,7 @@
 
     <div class="mt-14 text-center">
       <a href="#contacto"
-         class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-dark text-white font-body font-semibold px-8 py-4 rounded-full transition-all active:scale-95 text-base">
+         class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-dark text-brand-ink font-body font-semibold px-8 py-4 rounded-full transition-all active:scale-95 text-base">
         Quiero resultados así para mi negocio
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
@@ -559,23 +527,23 @@
 <section id="testimonios" class="py-20 px-6 lg:px-16 bg-brand-base-alt">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14 reveal">
-      <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Clientes reales</span>
-      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-4">Negocios de Olavarría<br/>que ya crecen con OLA</h2>
+      <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Clientes reales</span>
+      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-4">Negocios de Olavarría<br/>que ya crecen con OLA</h2>
       <p class="font-body text-brand-muted text-lg max-w-xl mx-auto">No son casos de éxito inventados. Son tus vecinos — comercios, restaurantes y marcas de la ciudad que apostaron al marketing digital.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
 
-      <div class="testimonial-card reveal bg-brand-panel rounded-2xl p-7 border border-white/10 flex flex-col gap-5">
+      <div class="testimonial-card reveal bg-brand-panel rounded-2xl p-7 border border-brand-ink/10 flex flex-col gap-5">
         <div class="flex items-center justify-between">
           <div class="flex gap-0.5">
             <span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span>
           </div>
           <span class="font-body text-xs font-semibold text-brand-blue bg-brand-blue/10 px-3 py-1 rounded-full">Redes Sociales</span>
         </div>
-        <p class="font-body text-white text-base leading-relaxed flex-1 italic">"OLA Digital transformó nuestra presencia en Instagram. Pasamos de postear cuando podíamos a tener una comunidad cervecera activa que comparte, comenta y viene al local."</p>
-        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+        <p class="font-body text-brand-ink text-base leading-relaxed flex-1 italic">"OLA Digital transformó nuestra presencia en Instagram. Pasamos de postear cuando podíamos a tener una comunidad cervecera activa que comparte, comenta y viene al local."</p>
+        <div class="flex items-center justify-between pt-2 border-t border-brand-ink/10">
           <div>
-            <div class="font-heading font-bold text-white text-sm">Sur del Sur</div>
+            <div class="font-heading font-bold text-brand-ink text-sm">Sur del Sur</div>
             <div class="font-body text-brand-muted text-xs mt-0.5">Compañía Cervecera · Olavarría</div>
           </div>
           <a href="https://www.instagram.com/sur.del.sur/" target="_blank" rel="noopener"
@@ -585,17 +553,17 @@
           </a>
         </div>
       </div>
-      <div class="testimonial-card reveal bg-brand-panel rounded-2xl p-7 border border-white/10 flex flex-col gap-5">
+      <div class="testimonial-card reveal bg-brand-panel rounded-2xl p-7 border border-brand-ink/10 flex flex-col gap-5">
         <div class="flex items-center justify-between">
           <div class="flex gap-0.5">
             <span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span>
           </div>
           <span class="font-body text-xs font-semibold text-brand-blue bg-brand-blue/10 px-3 py-1 rounded-full">Redes Sociales + Reservas</span>
         </div>
-        <p class="font-body text-white text-base leading-relaxed flex-1 italic">"Desde que OLA nos ayudó con la estrategia digital, las reservas online crecieron un montón. Hoy llegan clientes nuevos que nos encontraron en Instagram antes de venir a comer."</p>
-        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+        <p class="font-body text-brand-ink text-base leading-relaxed flex-1 italic">"Desde que OLA nos ayudó con la estrategia digital, las reservas online crecieron un montón. Hoy llegan clientes nuevos que nos encontraron en Instagram antes de venir a comer."</p>
+        <div class="flex items-center justify-between pt-2 border-t border-brand-ink/10">
           <div>
-            <div class="font-heading font-bold text-white text-sm">Pietra</div>
+            <div class="font-heading font-bold text-brand-ink text-sm">Pietra</div>
             <div class="font-body text-brand-muted text-xs mt-0.5">Restaurante · Olavarría</div>
           </div>
           <a href="https://www.instagram.com/pietraolavarria/" target="_blank" rel="noopener"
@@ -605,17 +573,17 @@
           </a>
         </div>
       </div>
-      <div class="testimonial-card reveal bg-brand-panel rounded-2xl p-7 border border-white/10 flex flex-col gap-5">
+      <div class="testimonial-card reveal bg-brand-panel rounded-2xl p-7 border border-brand-ink/10 flex flex-col gap-5">
         <div class="flex items-center justify-between">
           <div class="flex gap-0.5">
             <span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span><span class="text-brand-orange">★</span>
           </div>
           <span class="font-body text-xs font-semibold text-brand-blue bg-brand-blue/10 px-3 py-1 rounded-full">Diseño Web + E-commerce</span>
         </div>
-        <p class="font-body text-white text-base leading-relaxed flex-1 italic">"Nos diseñaron la tienda online desde cero y nos ayudaron a llegar a clientes en todo el país. Hoy vendemos mapas de Buenos Aires a Ushuaia gracias al trabajo de OLA."</p>
-        <div class="flex items-center justify-between pt-2 border-t border-white/10">
+        <p class="font-body text-brand-ink text-base leading-relaxed flex-1 italic">"Nos diseñaron la tienda online desde cero y nos ayudaron a llegar a clientes en todo el país. Hoy vendemos mapas de Buenos Aires a Ushuaia gracias al trabajo de OLA."</p>
+        <div class="flex items-center justify-between pt-2 border-t border-brand-ink/10">
           <div>
-            <div class="font-heading font-bold text-white text-sm">Maroni Maps</div>
+            <div class="font-heading font-bold text-brand-ink text-sm">Maroni Maps</div>
             <div class="font-body text-brand-muted text-xs mt-0.5">Tienda de Mapas · Argentina</div>
           </div>
           <a href="https://maronimaps.com/" target="_blank" rel="noopener"
@@ -643,20 +611,20 @@
                loading="lazy"/>
         </div>
         <!-- Badge -->
-        <div class="absolute -bottom-4 -right-4 bg-brand-blue text-white rounded-2xl px-4 py-2 shadow-lg">
+        <div class="absolute -bottom-4 -right-4 bg-brand-blue text-brand-ink rounded-2xl px-4 py-2 shadow-lg">
           <div class="font-heading font-bold text-sm leading-tight">OLA Digital</div>
           <div class="font-body text-blue-100 text-xs">Olavarría, BA</div>
         </div>
       </div>
       <div class="text-center md:text-left mt-2">
-        <div class="font-heading font-bold text-xl text-white">Guido Carminatti</div>
+        <div class="font-heading font-bold text-xl text-brand-ink">Guido Carminatti</div>
         <div class="font-body text-brand-muted text-sm">Fundador & Director, OLA Digital</div>
       </div>
     </div>
     <!-- Text -->
     <div>
-      <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Sobre nosotros</span>
-      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-6">Marketing digital<br/>hecho por alguien<br/>de acá.</h2>
+      <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Sobre nosotros</span>
+      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-6">Marketing digital<br/>hecho por alguien<br/>de acá.</h2>
       <p class="font-body text-brand-muted text-base leading-relaxed mb-8">
         Soy Guido, fundador de OLA Digital. Nací y crecí en Olavarría, y vi de primera mano cómo los negocios locales perdían clientes frente a competidores que simplemente tenían mejor presencia digital.<br/><br/>Creé OLA Digital para resolver ese problema: traer marketing digital de calidad directamente a los negocios de la ciudad, sin precios de agencia porteña ni resultados genéricos. Cada cliente es un vecino — eso cambia cómo trabajamos.
       </p>
@@ -667,7 +635,7 @@
             <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
           </div>
           <div>
-            <div class="font-body font-semibold text-white mb-1">Transparencia total</div>
+            <div class="font-body font-semibold text-brand-ink mb-1">Transparencia total</div>
             <div class="font-body text-brand-muted text-sm leading-relaxed">Reportes claros cada mes. Siempre sabés en qué se invierte tu presupuesto y qué resultados estamos logrando.</div>
           </div>
         </div>
@@ -676,7 +644,7 @@
             <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
           </div>
           <div>
-            <div class="font-body font-semibold text-white mb-1">Resultados medibles</div>
+            <div class="font-body font-semibold text-brand-ink mb-1">Resultados medibles</div>
             <div class="font-body text-brand-muted text-sm leading-relaxed">Sin métricas de vanidad: trabajamos sobre números que impactan directamente en tus ventas y tu negocio.</div>
           </div>
         </div>
@@ -685,7 +653,7 @@
             <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
           </div>
           <div>
-            <div class="font-body font-semibold text-white mb-1">Comunicación directa</div>
+            <div class="font-body font-semibold text-brand-ink mb-1">Comunicación directa</div>
             <div class="font-body text-brand-muted text-sm leading-relaxed">Tenés acceso directo a quien trabaja tu cuenta. Sin intermediarios, sin demoras, sin sorpresas.</div>
           </div>
         </div>
@@ -697,14 +665,14 @@
 <section id="contacto" class="py-20 px-6 lg:px-16 bg-brand-base-alt">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14 reveal">
-      <span class="font-body font-semibold text-brand-blue text-sm uppercase tracking-widest">Contacto</span>
-      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-white mt-3 mb-4">Hablamos?</h2>
+      <span class="font-mono font-medium text-brand-blue text-xs uppercase tracking-widest">Contacto</span>
+      <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-ink mt-3 mb-4">Hablamos?</h2>
       <p class="font-body text-brand-muted text-lg max-w-xl mx-auto">El primer diagnóstico es gratis. Escribinos por WhatsApp y te decimos exactamente qué haríamos para hacer crecer tu negocio.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-12 items-start">
       <!-- WhatsApp-first contact column -->
       <div class="space-y-6">
-        <div class="bg-brand-blue rounded-2xl p-7 text-white">
+        <div class="bg-brand-blue rounded-2xl p-7 text-brand-ink">
           <div class="font-heading font-bold text-xl mb-2">Diagnóstico digital gratuito</div>
           <p class="font-body text-blue-100 text-sm leading-relaxed mb-5">Analizamos tu presencia digital actual y la de tu competencia, sin costo. Te decimos exactamente qué haríamos para hacer crecer tu negocio.</p>
           <a href="https://wa.me/5491162310105?text=Hola%2C%20me%20interesa%20el%20diagn%C3%B3stico%20digital%20gratuito." target="_blank" rel="noopener"
@@ -713,8 +681,8 @@
             Escribinos por WhatsApp
           </a>
         </div>
-        <div class="bg-brand-panel rounded-2xl p-6 border border-white/10">
-          <h3 class="font-heading font-bold text-lg text-white mb-4">Otras formas de contacto</h3>
+        <div class="bg-brand-panel rounded-2xl p-6 border border-brand-ink/10">
+          <h3 class="font-heading font-bold text-lg text-brand-ink mb-4">Otras formas de contacto</h3>
           <div class="space-y-4">
             <a href="mailto:hola@oladigital.com.ar"
                class="flex items-center gap-4 p-4 rounded-xl bg-brand-blue/10 border border-brand-blue/20 hover:bg-brand-blue/15 transition-colors">
@@ -722,16 +690,16 @@
                 <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               </div>
               <div>
-                <div class="font-body font-semibold text-white text-sm">Email</div>
+                <div class="font-body font-semibold text-brand-ink text-sm">Email</div>
                 <div class="font-body text-brand-muted text-sm">hola@oladigital.com.ar</div>
               </div>
             </a>
-            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-              <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-ink/5 border border-brand-ink/10">
+              <div class="w-10 h-10 rounded-full bg-brand-ink/8 flex items-center justify-center flex-shrink-0">
                 <svg class="w-5 h-5 text-brand-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               </div>
               <div>
-                <div class="font-body font-semibold text-white text-sm">Ubicación</div>
+                <div class="font-body font-semibold text-brand-ink text-sm">Ubicación</div>
                 <div class="font-body text-brand-muted text-sm">Olavarría, Buenos Aires, Argentina</div>
               </div>
             </div>
@@ -742,36 +710,36 @@
       <div>
         <p class="font-body text-brand-muted text-sm mb-4">Preferís escribir? Completá el formulario y te contactamos.</p>
         <form id="contacto-form" name="ola-digital-leads" method="POST" data-netlify="true"
-              class="bg-brand-panel rounded-2xl p-8 border border-white/10 space-y-5">
+              class="bg-brand-panel rounded-2xl p-8 border border-brand-ink/10 space-y-5">
           <input type="hidden" name="form-name" value="ola-digital-leads"/>
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
-              <label class="block font-body font-medium text-white text-sm mb-1.5">Nombre *</label>
+              <label class="block font-body font-medium text-brand-ink text-sm mb-1.5">Nombre *</label>
               <input type="text" name="nombre" required placeholder="Tu nombre"
-                     class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
+                     class="w-full bg-brand-ink/5 border border-brand-ink/15 rounded-xl px-4 py-3 font-body text-sm text-brand-ink placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
             </div>
             <div>
-              <label class="block font-body font-medium text-white text-sm mb-1.5">Email *</label>
+              <label class="block font-body font-medium text-brand-ink text-sm mb-1.5">Email *</label>
               <input type="email" name="email" required placeholder="tu@email.com"
-                     class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
+                     class="w-full bg-brand-ink/5 border border-brand-ink/15 rounded-xl px-4 py-3 font-body text-sm text-brand-ink placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
             </div>
           </div>
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
-              <label class="block font-body font-medium text-white text-sm mb-1.5">Negocio (opcional)</label>
+              <label class="block font-body font-medium text-brand-ink text-sm mb-1.5">Negocio (opcional)</label>
               <input type="text" name="negocio" placeholder="Nombre de tu negocio"
-                     class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
+                     class="w-full bg-brand-ink/5 border border-brand-ink/15 rounded-xl px-4 py-3 font-body text-sm text-brand-ink placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
             </div>
             <div>
-              <label class="block font-body font-medium text-white text-sm mb-1.5">Teléfono (opcional)</label>
+              <label class="block font-body font-medium text-brand-ink text-sm mb-1.5">Teléfono (opcional)</label>
               <input type="tel" name="telefono" placeholder="02284 XXXXXX"
-                     class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
+                     class="w-full bg-brand-ink/5 border border-brand-ink/15 rounded-xl px-4 py-3 font-body text-sm text-brand-ink placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors"/>
             </div>
           </div>
           <div>
-            <label class="block font-body font-medium text-white text-sm mb-1.5">Servicio de interés</label>
+            <label class="block font-body font-medium text-brand-ink text-sm mb-1.5">Servicio de interés</label>
             <select name="servicio"
-                    class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-body text-sm text-white focus:outline-none focus:border-brand-blue transition-colors">
+                    class="w-full bg-brand-ink/5 border border-brand-ink/15 rounded-xl px-4 py-3 font-body text-sm text-brand-ink focus:outline-none focus:border-brand-blue transition-colors">
               <option value="" class="bg-brand-dark">Seleccioná un servicio...</option>
               <option value="Ads Pagados" class="bg-brand-dark">Ads Pagados</option>
               <option value="Diseño Web" class="bg-brand-dark">Diseño Web</option>
@@ -779,12 +747,12 @@
             </select>
           </div>
           <div>
-            <label class="block font-body font-medium text-white text-sm mb-1.5">Mensaje *</label>
+            <label class="block font-body font-medium text-brand-ink text-sm mb-1.5">Mensaje *</label>
             <textarea name="mensaje" required rows="4" placeholder="Contanos de tu negocio y qué querés lograr..."
-                      class="w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors resize-none"></textarea>
+                      class="w-full bg-brand-ink/5 border border-brand-ink/15 rounded-xl px-4 py-3 font-body text-sm text-brand-ink placeholder-white/40 focus:outline-none focus:border-brand-blue transition-colors resize-none"></textarea>
           </div>
           <button type="submit" id="contacto-btn"
-                  class="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-body font-semibold py-3.5 rounded-xl transition-all active:scale-95 text-base">
+                  class="w-full bg-brand-blue hover:bg-brand-blue-dark text-brand-ink font-body font-semibold py-3.5 rounded-xl transition-all active:scale-95 text-base">
             Enviar mensaje
           </button>
         </form>
@@ -807,7 +775,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
                     </svg>
                   </div>
-                  <h3 class="font-heading font-bold text-xl text-white mb-2">¡Mensaje enviado!</h3>
+                  <h3 class="font-heading font-bold text-xl text-brand-ink mb-2">¡Mensaje enviado!</h3>
                   <p class="font-body text-brand-muted text-sm">Te contactamos en las próximas horas.<br/>¡Gracias por escribirnos!</p>
                 </div>`;
             } catch(err) {
@@ -822,73 +790,85 @@
   </div>
 </section>
 
+<div class="mini-toolbar" aria-hidden="true">
+  <a href="#servicios" aria-label="Ir a servicios">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+  </a>
+  <a href="#trabajos" aria-label="Ir a trabajos">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 3h6M4 7h16v13a2 2 0 01-2 2H6a2 2 0 01-2-2V7z"/></svg>
+  </a>
+  <a href="#contacto" aria-label="Ir a contacto">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+  </a>
+</div>
+
 <a href="https://wa.me/5491162310105?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios."
    target="_blank" rel="noopener"
    aria-label="Chateá con OLA Digital por WhatsApp"
    class="whatsapp-pulse fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1ebe5a] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group">
-  <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+  <svg class="w-7 h-7 text-brand-ink" fill="currentColor" viewBox="0 0 24 24">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.524 5.854L0 24l6.335-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.493-5.18-1.357l-.37-.219-3.835.909.971-3.75-.241-.385A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
   </svg>
-  <span class="absolute right-16 bg-brand-dark text-white text-xs font-body font-medium px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+  <span class="absolute right-16 bg-brand-dark text-brand-ink text-xs font-body font-medium px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
     ¡Chateá con nosotros!
   </span>
 </a>
 
-<footer class="bg-brand-dark text-white py-14 px-6 lg:px-16">
+<footer class="bg-brand-dark text-brand-ink py-14 px-6 lg:px-16">
   <div class="max-w-6xl mx-auto">
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
       <!-- Brand -->
       <div class="sm:col-span-2 lg:col-span-1">
-        <img src="assets/logo-white.svg" alt="OLA Digital" class="h-10 w-auto mb-3"/>
+        <img src="assets/logo.svg" alt="OLA Digital" class="h-10 w-auto mb-3"/>
         <div class="w-8 h-0.5 bg-brand-blue mb-4 rounded"></div>
-        <p class="font-body text-slate-400 text-sm leading-relaxed mb-5">Hacemos crecer negocios en Olavarría.<br/>Olavarría, Buenos Aires, Argentina.</p>
+        <p class="font-body text-slate-600 text-sm leading-relaxed mb-5">Hacemos crecer negocios en Olavarría.<br/>Olavarría, Buenos Aires, Argentina.</p>
         <div class="flex gap-3">
-          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-blue flex items-center justify-center transition-colors">
-            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-brand-ink/8 hover:bg-brand-blue flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 text-brand-ink" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
-          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-blue flex items-center justify-center transition-colors">
-            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-brand-ink/8 hover:bg-brand-blue flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 text-brand-ink" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-blue flex items-center justify-center transition-colors">
-            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-brand-ink/8 hover:bg-brand-blue flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 text-brand-ink" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
         </div>
       </div>
       <!-- Navigation -->
       <div>
-        <div class="font-body font-semibold text-white text-sm mb-4">Navegación</div>
+        <div class="font-body font-semibold text-brand-ink text-sm mb-4">Navegación</div>
         <ul class="space-y-2">
-          <li><a href="#servicios" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Servicios</a></li><li><a href="#trabajos" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Trabajos</a></li><li><a href="#testimonios" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Testimonios</a></li><li><a href="#nosotros" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Nosotros</a></li><li><a href="#contacto" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Contacto</a></li>
+          <li><a href="#servicios" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Servicios</a></li><li><a href="#trabajos" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Trabajos</a></li><li><a href="#testimonios" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Testimonios</a></li><li><a href="#nosotros" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Nosotros</a></li><li><a href="#contacto" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Contacto</a></li>
         </ul>
       </div>
       <!-- Services -->
       <div>
-        <div class="font-body font-semibold text-white text-sm mb-4">Servicios</div>
+        <div class="font-body font-semibold text-brand-ink text-sm mb-4">Servicios</div>
         <ul class="space-y-2">
-          <li><a href="#servicios" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Ads Pagados</a></li><li><a href="#servicios" class="font-body text-slate-400 hover:text-white text-sm transition-colors">Diseño Web</a></li>
+          <li><a href="#servicios" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Ads Pagados</a></li><li><a href="#servicios" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">Diseño Web</a></li>
         </ul>
       </div>
       <!-- Contact -->
       <div>
-        <div class="font-body font-semibold text-white text-sm mb-4">Contacto</div>
+        <div class="font-body font-semibold text-brand-ink text-sm mb-4">Contacto</div>
         <ul class="space-y-3">
           <li class="flex items-start gap-2">
             <svg class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.524 5.854L0 24l6.335-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.493-5.18-1.357l-.37-.219-3.835.909.971-3.75-.241-.385A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-            <a href="https://wa.me/5491162310105" class="font-body text-slate-400 hover:text-white text-sm transition-colors">+54 9 11 6231-0105</a>
+            <a href="https://wa.me/5491162310105" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">+54 9 11 6231-0105</a>
           </li>
           <li class="flex items-start gap-2">
             <svg class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            <a href="mailto:hola@oladigital.com.ar" class="font-body text-slate-400 hover:text-white text-sm transition-colors">hola@oladigital.com.ar</a>
+            <a href="mailto:hola@oladigital.com.ar" class="font-body text-slate-600 hover:text-brand-ink text-sm transition-colors">hola@oladigital.com.ar</a>
           </li>
           <li class="flex items-start gap-2">
             <svg class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            <span class="font-body text-slate-400 text-sm">Olavarría, Buenos Aires</span>
+            <span class="font-body text-slate-600 text-sm">Olavarría, Buenos Aires</span>
           </li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="border-t border-brand-ink/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
       <p class="font-body text-slate-500 text-sm">© 2025 OLA Digital — Olavarría, Buenos Aires, Argentina.</p>
       <p class="font-body text-slate-600 text-xs">Hecho con ❤️ en Olavarría</p>
     </div>
